@@ -35,12 +35,12 @@ def word_tally(reviews, positive_words, negative_words):
         for positive_word in positive_words:
             if positive_word in review:
                 positive_count += 1
-            elif positive_word.capitalize() in review:
+            elif positive_word in review:
                 positive_count += 1
         for negative_word in negative_words:
             if negative_word in review:
                 negative_count += 1
-            elif negative_word.capitalize() in review:
+            elif negative_word in review:
                 negative_count += 1
     return positive_count, negative_count
 
